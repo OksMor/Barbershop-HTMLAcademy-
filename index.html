@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--то, что выше....оптимизированный для мобильных устройств-->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--Для работы в IE-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <title>Барбершоп "Бородинский"</title>
@@ -18,11 +17,11 @@
           <li><a href="#">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
           <li><a href="shop.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <div class="user-block">
-        <a class="login" href="#">Вход</a>
+        <a class="login" href="login.html">Вход</a>
       </div>
     </div>
   </header>
@@ -89,8 +88,8 @@
           пн - пт: с 10:00 до 22:00 <br>
           сб - вс: с 10:00 до 19:00
         </p>
-        <a class="btn map" href="#">Как проехать</a>
-        <a class="btn" href="#">Обратная связь</a>
+        <a class="btn map" href="contacts.html">Как проехать</a>
+        <a class="btn feedback" href="login.html">Обратная связь</a>
       </div>
       <div class="index-content__right">
           <h2 class="index-content__title">Записаться</h2>
@@ -111,7 +110,7 @@
       <section class="footer__contacts">
         Барбершоп Бородинский <br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
-        <a href="#">Как нас найти</a><br>
+        <a href="contacts.html">Как нас найти</a><br>
         Телефон: +7 (812) 666-02-66
       </section>
       <section class="footer__social">
@@ -130,7 +129,6 @@
       </section>
     </div>
   </footer>
-<!--***************Окно входа*************************-->
   <div class="modal-content">
     <button class="modal-content__close" type="button" name="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-content__title">Личный кабинет</h2>
@@ -149,7 +147,22 @@
   </div>
   <div class="modal-content-map">
     <button class="modal-content-map__close" type="button" name="button" title="Закрыть">Закрыть</button>
-    <!--<div id="yandex-map"></div>-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991036590476!2d30.321781901118815!3d59.93879419359227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1ffa482f29ae8072!2z0JPQu9C-0LHQsNC7INCQ0YDRgg!5e0!3m2!1sru!2sru!4v1581271060773!5m2!1sru!2sru" width="766" height="561" frameborder="0" style="border:0;" allowfullscreen=""></iframe><!--600/450-->
+  </div>
+  <div class="modal-content-feedback">
+    <button class="modal-content-feedback__close" type="button" name="button" title="Закрыть">Закрыть</button>
+    <form class="feedback-form" action="#" method="post">
+      <h2>Форма обратной связи</h2>
+      <label class="user-name"><span>Ваше имя</span>
+      <input type="text" name="user" placeholder="Представьтесь, пожалуйста"></label>
+      <label class="user-email">Ваш e-mail
+      <input class="email" type="email" name="email" placeholder="Для отправки ответа"></label>
+      <label class="user-letter">Текст письма
+        <textarea class="letter" name="text" placeholder="Напишите нам, и мы ответим"></textarea><!--rows="5" cols="44"-->
+      </label>
+
+      <button class="btn"type="submit">Отправить</button>
+    </form>
   </div>
   <div class="modal-overlay"></div>
   <script language="javascript" src="js/script.js"></script>
