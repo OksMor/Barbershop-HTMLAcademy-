@@ -77,7 +77,7 @@ body {
 }
 .main-navigation .active span {
   display: block;
-  padding: 25px; 20px;
+  padding: 25px 20px;
 }
 .main-navigation
 .logo-inner {
@@ -465,10 +465,10 @@ margin-right: 10px;
   line-height: 0;
 }
 .big-item-photo img,
-.smol-item-photo img {
+.small-item-photo img {
   background-color: #cccccc;
 }
-.smol-item-photo {
+.small-item-photo {
   float: left;
   margin: 0;
   margin-right: 20px;
@@ -477,25 +477,25 @@ margin-right: 10px;
 .mrg {
   margin: 0;
 }
-.discription-info {
+.description-info {
   margin: 0;
   padding: 0;
 }
-.discription p {
+.description p {
   margin: 40px 0;
 }
 .inner-item__title h2 {
   margin: 65px 0 40px 0;
 }
 .info,
-.articl {
+.article {
   list-style: none;
   display: inline-block;
 }
 .inf {
   float: left;
 }
-.articl {
+.article {
   float: right;
   color: #cccccc;
 }
@@ -639,14 +639,14 @@ margin-right: 10px;
   font-size: 14px;
   line-height: 18px;
 }
-.grup,
+.group,
 .prod {
   list-style: none;
 }
-.grup {
+.group {
   text-transform: capitalize;
 }
-.grup a {
+.group a {
   text-decoration: none;
   color: #000000;
 }
@@ -713,7 +713,7 @@ float: right;
   margin: 0;
   margin-bottom: 15px;
 }
-.sotial-btn {
+.social-btn {
   display: inline-block;
   width: 43px;
   height: 43px;
@@ -723,25 +723,25 @@ float: right;
   text-decoration: none;
   background: #000000 url("../img/bb-sprite.png") no-repeat center;
 }
-.sotial-btn:hover {
+.social-btn:hover {
   background-color: #ffffff;
 }
-.sotial-btn-vk {
+.social-btn-vk {
   background-position: 9px 10px;
 }
-.sotial-btn-fb {
+.social-btn-fb {
   background-position: -39px 10px;
 }
-.sotial-btn-inst {
+.social-btn-inst {
   background-position: -89px 10px;
 }
-.sotial-btn-vk:hover {
+.social-btn-vk:hover {
   background-position: 9px -35px;
 }
-.sotial-btn-fb:hover {
+.social-btn-fb:hover {
   background-position: -39px -35px;
 }
-.sotial-btn-inst:hover {
+.social-btn-inst:hover {
   background-position: -89px -35px;
 }
 .footer__copyright {
@@ -890,8 +890,8 @@ float: right;
 }
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  top: -3px;
-  left: 0;
+  /* top: -3px;
+  left: 0; */
   width: 17px;
   height: 17px;
   border: 2px solid #000000;
@@ -911,6 +911,9 @@ float: right;
 }
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
+}
+.checkbox-indicator-title {
+  padding-left: 25px;
 }
 .modal-content-map {
   position: fixed;
